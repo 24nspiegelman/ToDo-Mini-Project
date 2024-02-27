@@ -30,7 +30,7 @@ export default function App() {
     <View style={styles.container}>
     <View style={styles.tableContainer}>
         <Table borderStyle={{ borderWidth: 2,  
-                borderColor: 'black' }}> 
+                borderColor: 'green' }}> 
                 <Row data={header} /> 
                 <Rows data={data} /> 
             </Table> 
