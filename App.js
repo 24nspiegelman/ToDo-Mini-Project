@@ -3,7 +3,6 @@ import React from 'react';
 import { SafeAreaView } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 import { useState } from 'react';
-import { Rows } from 'react-native-table-component';
 
 
 function MyCheckbox() {
@@ -38,7 +37,7 @@ export default function App() {
         <Pressable style={styles.greenButton}
         onPress={() => alert("This is supposed to add a task")}
         >
-          <Text style={styles.buttonText}>+</Text>
+          <Text style={styles.buttonText}>{'+'}</Text>
         </Pressable>
       </View>
       </View>
@@ -47,14 +46,16 @@ export default function App() {
         <Pressable style={styles.redButton}
         onPress={() => alert("This is supposed to remove a task")}
         >
-          <Text style={styles.buttonText}>-</Text>
+          <Text style={styles.buttonText}>{'-'}</Text>
         </Pressable>
       </View>
       </View>
         </View>
 
       </SafeAreaView>
-      <View style={styles.headerContainer}> <Text style={styles.header}>ToDo</Text></View>
+      <View style={styles.headerContainer}> 
+      <Text style={styles.header}>{'ToDo'}</Text>
+      </View>
       <View style={styles.appContainer}>
       <View id = '1' style={styles.checkboxContainer}>
         <MyCheckbox />
